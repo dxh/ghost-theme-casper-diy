@@ -22,6 +22,18 @@
             {{#if @site.twitter}}
                 <a class="social-link social-link-tw" href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
             {{/if}}
+            {{#if @config.theme.sns.weibo}}
+                <a class="social-link social-link-tw" href="{{@config.theme.sns.weibo}}" title="Weibo" target="_blank" rel="noopener">{{> "icons/weibo"}}</a>
+            {{/if}}
+            {{#if @config.theme.sns.instagram}}
+                <a class="social-link social-link-tw" href="{{@config.theme.sns.instagram}}" title="Instagram" target="_blank" rel="noopener">{{> "icons/instagram"}}</a>
+            {{/if}}
+            {{#if @config.theme.sns.github}}
+                <a class="social-link social-link-tw" href="{{@config.theme.sns.github}}" title="Github" target="_blank" rel="noopener">{{> "icons/github"}}</a>
+            {{/if}}
+            {{#if @config.theme.sns.linkedin}}
+                <a class="social-link social-link-tw" href="{{@config.theme.sns.linkedin}}" title="LinkedIn" target="_blank" rel="noopener">{{> "icons/linkedin"}}</a>
+            {{/if}}
         </div>
         {{#if @labs.members}}
             <a class="subscribe-button" href="#subscribe">Subscribe</a>
