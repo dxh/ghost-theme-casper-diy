@@ -1,0 +1,73 @@
+{{!< default}}
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+
+{{!-- The big featured header, it uses blog cover image as a BG if available --}}
+
+{{#post}}
+
+<header class="site-archive-header">
+    {{> site-header}}
+   
+        <div class="inner site-header-content">
+            <h1 class="site-title">{{title}}</h1>
+        </div>
+   
+</header>
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+        {{#get 'tags' limit='all' include='count.posts' order='count.posts desc'}}
+        
+        <div class="img-row">
+            {{#foreach tags}}
+                <a href='{{ url }}'>
+                <div class="img-col img-container">
+                    <img src="{{img_url feature_image size="m"}}" alt="{{title}}"/>
+                    <h2 class="img-text-block">{{ name }} <small>({{ count.posts }})</small></h2>
+                </div>
+                </a>
+            {{/foreach}}
+        </div>
+
+        {{/get}}
+    </div>
+</main>
+
+{{/post}}
+
+<style>
+
+
+    .img-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .img-col {
+        flex: 25%;
+        padding: 0px;
+    }
+    .img-col img {
+        border-radius: 10px;
+        margin: 10px;
+        vertical-align: middle;
+        height: 170px;
+        width: 230px;
+    }
+
+    /* Container holding the image and the text */
+    .img-container {
+       position: relative;
+    }
+    /* Bottom right text */
+    .img-text-block {
+        position: absolute; /* Position the background text */
+        bottom: 0px; /* At the bottom. Use top:0 to append it to the top */
+        left: 10px;
+        color: #f1f1f1; /* Grey text */
+        width: 50%; /* Full width */
+        padding: 5px; /* Some padding */
+    }
+
+
+</style>
