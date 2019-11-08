@@ -1,7 +1,7 @@
 {
-    "name": "casper",
-    "description": "A clean, minimal default theme for the Ghost publishing platform",
-    "demo": "https://demo.ghost.io",
+    "name": "casper-diy",
+    "description": "A clean, minimal theme for the Ghost publishing platform",
+    "demo": "https://share.dengxh.com",
     "version": "3.0.2",
     "engines": {
         "ghost": ">=3.0.0",
@@ -22,9 +22,9 @@
         "postship": "git fetch && gulp release"
     },
     "author": {
-        "name": "Ghost Foundation",
-        "email": "hello@ghost.org",
-        "url": "https://ghost.org"
+        "name": "Joker_酒哥",
+        "email": "dxh1688@gmail.com",
+        "url": "https://share.dengxh.com"
     },
     "gpm": {
         "type": "theme",
@@ -40,10 +40,10 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/TryGhost/Casper.git"
+        "url": "https://github.com/dxh/ghost-theme-casper-diy.git"
     },
-    "bugs": "https://github.com/TryGhost/Casper/issues",
-    "contributors": "https://github.com/TryGhost/Casper/graphs/contributors",
+    "bugs": "https://github.com/dxh/ghost-theme-casper-diy/issues",
+    "contributors": "https://github.com/dxh/ghost-theme-casper-diy/graphs/contributors",
     "devDependencies": {
         "@tryghost/release-utils": "0.3.2",
         "autoprefixer": "9.6.5",
@@ -65,6 +65,15 @@
         "defaults"
     ],
     "config": {
+        "theme": {
+            "sns": {
+                "github": "", 
+                "instagram": "",
+                "linkedin": "",
+                "weibo":""
+            },
+            "disqus": ""
+        },
         "posts_per_page": 25,
         "image_sizes": {
             "xxs": {
