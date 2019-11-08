@@ -67,11 +67,12 @@
     "config": {
         "theme": {
             "sns": {
-                "github": "https://github.com/dxh",
-                "instagram": "https://www.instagram.com/xiaohua.d",
-                "linkedin": "https://www.linkedin.com/in/xiaohua-deng-a692b931",
-                "weibo":"https://weibo.com/survivordeng"
-            }
+                "github": "", 
+                "instagram": "",
+                "linkedin": "",
+                "weibo":""
+            },
+            "disqus": ""
         },
         "posts_per_page": 25,
         "image_sizes": {
