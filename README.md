@@ -5,7 +5,10 @@ DIY by @dengxh based on the the default theme for [Ghost](http://github.com/tryg
 # Feature
 
 1. Tags archives page.
-2. To be continued ...
+2. Theme config supported
+3. More SNS supported, such as Instagram, LinkedIn, Github, Weibo.
+4. Disqus supported
+5. To be continued ...
 
 # Copyright & License
 
